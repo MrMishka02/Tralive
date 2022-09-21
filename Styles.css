@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+html{
+    overflow-x: hidden;
+}
 .mynav{
+    width: 100%;
     height: 103px;
     background-color: #ffffff !important;
+    position: fixed;
+    z-index: 5;
 }
 .myul{
-    margin-right: 5%;
+    margin-right: 3%;
     margin-top: 1%;
 }
 
@@ -18,7 +26,7 @@
     font-weight: 500;
     font-family: "Josefin Sans", sans-serif !important;
     border-radius: 5px;
-    margin-top: -1%; 
+    margin-top: -1%;
 }
 .my-a{
     padding-right: 30px !important;
@@ -45,4 +53,93 @@
 }
 .hoverx1:hover::after{
     width: 100%;
+}
+.empty{
+    width: 100%;
+    height: 100px;
+}
+.myh{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myh h1{
+    font-size: 60px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #00095E;
+    font-weight: 700;
+}
+.myh h5{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #00095E;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.explore{
+    background: #00095E;
+    color: #ffffff;
+    width: 260px;
+    height: 70px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.underlined{
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+.wall{
+    position: relative;
+    width: 100%;
+}
+.animation{
+    height: 800px;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.bus{
+    width: 970px;
+    height: 478px;
+    animation: busmove 10s infinite ;
+    position: absolute;
+    bottom: 150px;
+}
+@keyframes busmove {
+    0%{
+        transform: translateX(-15%);
+    }
+    50%{
+        transform: translateX(15%);
+    }
+    100%{
+        transform: translateX(-15%);
+    }
+}
+.check{
+    color: #7ea0ff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    display: inline-block;
+    letter-spacing: .05em;
+}
+.events{
+    font-size: 50px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 22px;
+    font-family: "Josefin Sans",sans-serif;
+    color: #00095e;
+    margin-top: 0;
+    font-style: normal;
+    text-transform: normal;
 }
