@@ -79,14 +79,35 @@ html{
     margin-bottom: 40px;
 }
 .explore{
-    background: #00095E;
+    background-color: #00095E;
     color: #ffffff;
-    width: 260px;
+    width: 270px;
     height: 70px;
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+}
+.explore::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #FFC800;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 200ms ease-in;
+    border-radius: 5px;
+}
+.explore:hover::after{
+    transform: scaleY(1);
 }
 .underlined{
     text-decoration: underline;
@@ -269,6 +290,27 @@ html{
     display: flex !important; 
     align-items: center !important;
     justify-content: center !important;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.bookbtn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00095E;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 200ms ease-in;
+    border-radius: 5px;
+}
+.bookbtn:hover::after{
+    transform: scaleY(1);
 }
 .customers{
     background-image: url("img/section_bg1.jpg");
@@ -312,6 +354,10 @@ html{
     padding-left: 30px;
 }
 .founder-image{
+    width: 65px;
+    height: 65px;
+}
+.founder-image img{
     width: 65px;
     height: 65px;
 }
@@ -402,4 +448,183 @@ html{
     color: #212529;
     text-align: left;
     background-color: #fff !important;
+}
+.btnbookdiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btnbook{
+    width: 240px;
+    height: 60px;
+    background: #ffc800;
+    font-family: "Roboto", sans-serif;
+    color: #fff!important;
+    display: inline-block;
+    font-size: 16px!important;
+    font-weight: 500!important;
+}
+.video{
+    width: 100%;
+    height: 680px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagevideo{
+    width: 1170px;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videowall{
+    position: absolute;
+}
+.videocaption{
+    position: relative;
+    width: 1170px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playbtn{
+    width: 96.31px;
+    height: 96.31px;
+}
+.videoh3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: "Josefin Sans",sans-serif;
+    line-height: 1.2;
+    margin-top: 8px;
+}
+.downimages{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+}
+.downimages img{
+    width: 20%;
+}
+.myfooter{
+    width: 100%;
+    height: 415px;
+    background-color: #00095e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footeritems{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.firstcollumn{
+    width: 25%;
+    height: 100%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    margin-left: 10%;
+}
+.firstcollumn p{
+    color: #8a8fbe;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+}
+.footerlogo{
+    width: 165px;
+    height: 57px;
+}
+.logobox{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.secondcollumn{
+    width: 20%;
+    height: 100%;
+    margin-left: 10%;
+}
+.foot-h4{
+    font-family: "Roboto",sans-serif;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10%;
+    margin-bottom: 28px;
+    font-weight: 700;
+}
+.foot-item{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0%;
+}
+.foot-li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+.foot-link{
+    color: #8a8fbe !important;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.thirdcollumn{
+    width: 20%;
+    height: 100%;
+}
+.forthcollumn{
+    width: 20%;
+    height: 100%;
+    margin-right: 10%;
+}
+.foot-p{
+    color: #8a8fbe !important;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.footnumb{
+    font-family: "Roboto",sans-serif;
+    font-size: 22px!important;
+    color: #ffc800;
+    margin-bottom: 0;
+    font-weight: 400!important;
+    text-decoration: none !important;
+}
+.heart{
+    width: 14px;
+    height: 14px;
+}
+.footheart p{
+    color: #8a8fbe;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    font-family: "Roboto",sans-serif;
+}
+.footheart a{
+    color: #ffc800;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    font-family: "Roboto",sans-serif;
+}
+.footheart{
+    display: flex;
+    justify-content: center;
+    background-color: #00095e;
 }
